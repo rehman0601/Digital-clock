@@ -10,7 +10,6 @@ function updateClock() {
   hours = hours % 12;
   hours = hours ? hours : 12; // 0 becomes 12
   hours = String(hours).padStart(2, '0');
-
   const timeString = `${hours}:${minutes}:${seconds} ${ampm}`;
   document.getElementById('clock').textContent = timeString;
 }
